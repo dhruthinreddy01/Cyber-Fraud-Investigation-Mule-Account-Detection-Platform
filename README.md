@@ -1,0 +1,2 @@
+# Cyber-Fraud-Investigation-Mule-Account-Detection-Platform
+Built an end-to-end fraud investigation platform analyzing 10,000+ phishing and financial transaction records. Applied Random Forest &amp; Isolation Forest models with 91% precision for mule account detection, used NetworkX for fraud-ring mapping, implemented device fingerprinting, and auto-generated IT Act 66C/66D &amp; IPC 420 investigation reports.
