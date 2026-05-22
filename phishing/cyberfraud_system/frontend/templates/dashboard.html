@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>SOC Dashboard</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/cases">Cases</a></li>
+                <li><a href="/alerts">High-Risk Alerts</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="dark-theme">
+        <section class="dashboard-cards">
+            <div class="card">
+                <h3>Total Cases</h3>
+                <p>{{ total_cases }}</p>
+            </div>
+            <div class="card">
+                <h3>High-Risk Alerts</h3>
+                <p>{{ high_risk_alerts|length }}</p>
+            </div>
+            <div class="card">
+                <h3>Recent Cases</h3>
+                <ul>
+                    {% for case in recent_cases %}
+                        <li>{{ case.case_id }} - {{ case.created_at }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 CyberFraud System</p>
+    </footer>
+</body>
+</html>
