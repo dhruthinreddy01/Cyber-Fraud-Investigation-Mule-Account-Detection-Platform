@@ -89,15 +89,6 @@ The platform focuses on practical investigation scenarios including:
 * Dark web indicator correlation
 * Dashboard for investigators and SOC analysts
 
-## Resume Impact
-
-This project demonstrates:
-
-* Cyber fraud investigation capability
-* SOC-level analytical workflow understanding
-* Practical machine learning implementation
-* Digital evidence correlation skills
-* Knowledge of Indian cybercrime laws and investigation procedures
 
 ## Author
 
